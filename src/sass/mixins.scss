@@ -1,10 +1,13 @@
-@mixin desktop-large {
-  @media (max-width: $desktop-large-width - 1) {
+@mixin laptop {
+  @media (max-width: $desktop-width - 1) {
     @content;
   }
 }
-
-
+@mixin tablet {
+  @media (max-width: $laptop-width - 1) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: $tablet-width - 1) {

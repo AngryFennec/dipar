@@ -1,0 +1,17 @@
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $desktop-width;
+  padding: 0 $desktop-padding;
+
+  &--no-padding {
+    padding: 0;
+  }
+}
+
+@include tablet {
+  .wrapper {
+    padding: 0 27px;
+    //max-width: 1200px;
+  }
+}

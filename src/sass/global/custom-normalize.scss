@@ -29,3 +29,7 @@ main {
 input::-ms-clear {
   display: none;
 }
+
+* {
+  box-sizing: border-box;
+}

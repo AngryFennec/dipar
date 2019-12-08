@@ -2,12 +2,20 @@
   box-sizing: border-box;
   margin: 0 auto;
   max-width: $desktop-width;
-  padding: 0 $desktop-padding;
+  padding: 0 360px;
 
   &--no-padding {
     padding: 0;
   }
 }
+
+@include laptop {
+  .wrapper {
+    padding: 0 10%;
+    //max-width: 1200px;
+  }
+}
+
 
 @include tablet {
   .wrapper {

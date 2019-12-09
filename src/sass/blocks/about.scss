@@ -1,0 +1,157 @@
+.about {
+  font-family: $font;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+
+}
+
+.about__title {
+  font-family: $font;
+font-size: 50px;
+line-height: 60px;
+color: #2F2F2F;
+margin-right: 7%;
+}
+
+.about__content  {
+  padding-top: 40px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 450px;
+  margin-left: 20px;
+  width: 50%;
+
+}
+.about__list-what {
+  margin: 0;
+}
+.about__list-item {
+  position: relative;
+  max-width: 366px;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #38AAF6;
+    top: 10px;
+    left: -20px;
+  }
+
+  &:first-child {
+    margin-right: 60px;
+  }
+}
+
+.about__list-bold {
+  font-weight: 700;
+}
+
+.about__wrapper {
+  display: flex;
+  position: relative;
+  padding-top: 85px;
+  padding-bottom: 108px;
+}
+
+.about__btn {
+  position: absolute;
+  top: 288px;
+}
+
+
+.about__text {
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 1400px) {
+  .about__btn {
+    position: relative;
+    top: 0;
+  }
+  .about__wrapper  {
+    padding-top: 50px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .about__list {
+    margin-bottom: 20px;
+  }
+
+  .about__title {
+    margin-bottom: 10px;
+  }
+  .about__content {
+    padding-top: 0;
+  }
+}
+@include tablet {
+  .about__btn {
+    position: relative;
+    top: 0;
+  }
+  .about__wrapper  {
+    padding-top: 50px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .about__list {
+    margin-bottom: 20px;
+  }
+
+  .about__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+  line-height: 114%;
+  }
+  .about__content {
+    padding-top: 0;
+  }
+
+}
+
+@include mobile {
+  .about__btn {
+    position: relative;
+    top: 0;
+  }
+  .about__wrapper  {
+    padding-top: 50px;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .about__list {
+    margin-bottom: 20px;
+    max-height: 100%;
+    width: auto;
+  }
+  .about__list-item {
+    max-width: 100%;
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 10px;
+    font-size: 30px;
+line-height: 114%;
+  }
+  .about__content {
+    padding-top: 0;
+  }
+}

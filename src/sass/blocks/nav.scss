@@ -1,0 +1,226 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: transparent;
+  color: #FFF;
+  height: 50px;
+  padding-top: 38px;
+}
+
+.menu__link {
+  font-family: $font;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+opacity: 0.5;
+text-decoration: none;
+transition: 0.2s;
+white-space: nowrap;
+
+&:hover {
+  transition: 0.2s;
+  color:#FFFFFF;
+  opacity: 1;
+}
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.nav__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+//  padding-left: 9%;
+}
+
+.nav__phone {
+  font-family: $font;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  transition: 0.2s;
+  white-space: nowrap;
+  &:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+  }
+}
+
+.nav__with-us {
+  font-family: $font;
+font-size: 16px;
+line-height: 22px;
+text-decoration: none;
+position: relative;
+transition: 0.2s;
+color: $white;
+text-align: right;
+  &:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+  }
+
+& span {
+  position: relative;
+  text-align: right;
+}
+& span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 100%;
+  left: 0;
+  background: url("../img/dash.svg") repeat-x;
+}
+}
+
+@media (max-width: 1400px) {
+  .menu {
+    margin-top: 0;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+
+  .menu__item {
+    margin-bottom: 10px;
+  }
+
+  .menu-button-container {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+@include tablet {
+  .menu-button-container {
+    display: flex;
+    order: 3;
+    margin-top: 4px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 110px;
+    left: 2%;
+    right: 2%;
+    flex-direction: column;
+    width: 100%;
+    max-width: 768px;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu li {
+    border-bottom: 1px solid #efefef;
+    height: 2.5em;
+    padding: 0.5em;
+    display: flex;
+    z-index: 10;
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+  }
+
+.nav__picture {
+  order: 1;
+
+  & img {
+    width: 80px;
+    height: auto;
+  }
+}
+  .nav__contacts {
+    order: 2;
+  }
+
+  .nav__phone {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .nav__with-us {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}

@@ -1,0 +1,10 @@
+.header {
+  background: radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
+  min-height: 900px;
+}
+
+.header__wrapper {
+    min-height: 900px;
+  background:linear-gradient(119.34deg, #17242D 0%, rgba(15, 24, 30, 0) 100%), url("../img/header.png") no-repeat;
+  background-position: bottom right;
+}

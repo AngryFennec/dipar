@@ -4,4 +4,4 @@
  */
 
 
-//= modules/sample.js
+//= modules/service.js

@@ -11,7 +11,6 @@ anchors.forEach(function(item) {
       });
       block.parentNode.classList.add("tool--active");
     }
-    console.log(block);
     block.scrollIntoView({
       behavior: 'smooth',
       block: 'start'

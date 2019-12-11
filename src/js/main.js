@@ -5,3 +5,4 @@
 
 
 //= modules/service.js
+//= modules/anchors.js

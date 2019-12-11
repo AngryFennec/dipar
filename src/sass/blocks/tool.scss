@@ -29,6 +29,10 @@ margin-bottom: 50px;
   margin-right: 120px;
 }
 
+.tool__picture-active {
+  display: none;
+}
+
 .tool__content {
   width: 50%;
   padding-top: 20px;
@@ -92,6 +96,14 @@ margin-bottom: 50px;
   .tool__links {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .tool__picture {
+    display: none;
+  }
+
+  .tool__picture-active {
+    display: block;
   }
 
 }

@@ -17,6 +17,7 @@ opacity: 0.5;
 text-decoration: none;
 transition: 0.2s;
 white-space: nowrap;
+border: none;
 
 &:hover {
   transition: 0.2s;
@@ -74,18 +75,8 @@ white-space: nowrap;
   margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
+#menu-toggle:checked + .menu-button-container {
+  content: "&#2716;"
 }
 
 .nav__contacts {
@@ -155,10 +146,6 @@ text-align: right;
   }
 }
 
-
-
-
-
 @include tablet {
   .menu-button-container {
     display: flex;
@@ -168,12 +155,11 @@ text-align: right;
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 110px;
-    left: 2%;
-    right: 2%;
+    margin-top: 80px;
+    right: 30px;
     flex-direction: column;
     width: 100%;
-    max-width: 768px;
+    max-width: 200px;
     justify-content: center;
     align-items: center;
   }
@@ -185,23 +171,41 @@ text-align: right;
     display: none;
   }
   #menu-toggle:checked ~ .menu li {
-    border-bottom: 1px solid #efefef;
+    //border-bottom: 1px solid rgba(196, 196, 196, 0.1);
+    //border-top: 1px solid rgba(196, 196, 196, 0.1);
     height: 2.5em;
     padding: 0.5em;
     display: flex;
     z-index: 10;
+    opacity: 1;
   }
+
   .menu > li {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
-    background-color: transparent;
+background: white;
     border: none;
+    opacity: 1;
+    color: #2f2f2f;
+    z-index: 10;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(47,47,47,1);
+    border-top: 1px solid rgba(47,47,47,1);
+
+  }
+  .menu__link {
+      color: #2f2f2f;
+      &:hover {
+        color: #151515;
+      }
   }
 
+    .menu > li:hover {
+  background: #868686;
+      }
 .nav__picture {
   order: 1;
 

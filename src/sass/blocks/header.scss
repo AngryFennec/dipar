@@ -162,7 +162,8 @@ color: #FFFFFF;
   }
   .header__item {
     width: 100%;
-    height: 290px;
+    min-height: 290px;
+    height: 100%;
     padding-bottom: 40px;
     border: none;
 

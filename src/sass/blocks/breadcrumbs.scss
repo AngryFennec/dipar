@@ -1,0 +1,41 @@
+.breadcrumbs {
+  color: #8C9398;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-top: 88px;
+  display: flex;
+  padding-left: 5px;
+}
+
+.breadcrumbs__item {
+  text-decoration: none;
+  transition: 0.2s;
+  color: #8C9398;
+  margin-right: 15px;
+  &:hover {
+    transition: 0.2s;
+    opacity: 0.7;
+  }
+  &:active {
+      color: #8C9398;
+  }
+}
+
+.breadcrumbs__item--home {
+
+  position: relative;
+
+  background: url("../img/home.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+
+  & span {
+    display: none;
+  }
+}
+
+.breadcrumbs__divider {
+  margin-right: 15px;
+}

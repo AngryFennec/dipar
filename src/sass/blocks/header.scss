@@ -7,7 +7,18 @@
     min-height: 900px;
   background:linear-gradient(119.34deg, #17242D 0%, rgba(15, 24, 30, 0) 100%), url("../img/header.png") no-repeat;
   background-position: bottom right;
-  padding: 0 6%;
+  padding: 0 18.5%;
+}
+
+.header__page-title {
+  font-family: $font;
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 67px;
+color: #E4ECF1;
+  padding-left: 5px;
+  margin-top: 13px;
 }
 
 .header__content {

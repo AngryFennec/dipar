@@ -17,12 +17,7 @@ margin-bottom: 50px;
 }
 
 
-.tool__wrapper {
-  display: flex;
-  padding-top: 50px;
-  padding-left: 364px;
-  padding-bottom: 30px;
-}
+
 
 
 .tool__picture {
@@ -80,30 +75,44 @@ margin-bottom: 50px;
 .tool--active {
   background: linear-gradient(0deg, #007DD6, #007DD6), linear-gradient(0deg, #29A5F8, #29A5F8), radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
   color: $white;
-  .tool__title {
+
+
+}
+.tool__wrapper {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 364px;
+  padding-bottom: 30px;
+
+  &:hover {
+    background: linear-gradient(0deg, #007DD6, #007DD6), linear-gradient(0deg, #29A5F8, #29A5F8), radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
     color: $white;
-    margin-top: 17px;
-  }
-  .tool__text {
-    color: #B6DAF4;
-    margin-bottom: 32px;
-  }
 
-  .tool__btn {
-    display: none;
-  }
+    .tool__title {
+      color: $white;
+      margin-top: 17px;
+    }
+    .tool__text {
+      color: #B6DAF4;
+      margin-bottom: 32px;
+    }
 
-  .tool__links {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    .tool__btn {
+      display: none;
+    }
 
-  .tool__picture {
-    display: none;
-  }
+    .tool__links {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  .tool__picture-active {
-    display: block;
+    .tool__picture {
+      display: none;
+    }
+
+    .tool__picture-active {
+      display: block;
+    }
   }
 
 }
@@ -195,6 +204,11 @@ margin-bottom: 50px;
   .tool__wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
+    &:hover {
+      .tool__picture, .tool__picture-active {
+        display: none;
+    }
+    }
   }
   .tool__title {
   font-size: 30px;

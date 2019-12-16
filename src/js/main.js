@@ -6,3 +6,4 @@
 
 //= modules/service.js
 //= modules/anchors.js
+//= modules/news.js

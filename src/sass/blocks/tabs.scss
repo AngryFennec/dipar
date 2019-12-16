@@ -23,11 +23,13 @@ color: #B7B7B7;
 margin-right: 40px;
 
 
+
 & a {
 
   position: relative;
   transition:0.2s;
   cursor: pointer;
+  white-space: nowrap;
   &:hover {
     transition:0.2s;
     opacity: 0.7;
@@ -35,6 +37,7 @@ margin-right: 40px;
   }
 
 }
+
 &--active {
   color: #151515;
   & a::after {
@@ -47,5 +50,8 @@ top: 45px;
     left: 0;
 
   }
+}
+@include mobile {
+  margin-right: 20px;
 }
 }

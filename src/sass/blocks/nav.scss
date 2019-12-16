@@ -36,6 +36,12 @@ border: none;
 
 }
 
+.menu__item--active {
+  .menu__link {
+    opacity: 1;
+  }
+}
+
 .menu > li {
   margin: 0 1rem;
 }

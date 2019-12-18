@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Дипар</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-body">
+  <main class="page-main">
+    <article class="header">
+      <a id="main"></a>
+      <div class="header__wrapper wrapper">
+        <nav class="nav">
+          <a class="nav__picture" href="#main">
+          <picture>
+            <img width="180" height="51" src="img/header-logo.png" srcset="img/header-logo@2x.png 2x" alt="Лого">
+          </picture>
+        </a>
+          <input id="menu-toggle" type="checkbox">
+
+          <label class='menu-button-container' for="menu-toggle">&#9776;</label>
+          <ul class="menu">
+            <li class="menu__item menu__item--active"><a class="menu__link anchor" href="#main">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="menu__item"><a class="menu__link anchor" href="#service">Услуги</a></li>
+            <li class="menu__item"><a class="menu__link" href="news.html">Новости и статьи</a></li>
+            <li class="menu__item"><a class="menu__link anchor" href="#about">О компании</a></li>
+            <li class="menu__item"><a class="menu__link anchor" href="#footer">Контакты</a></li>
+          </ul>
+
+          <div class="nav__contacts">
+            <a class="nav__phone" href="tel:+78005553555">8 800 555 35 55</a>
+            <a class="nav__with-us" href="#"><span>Связаться с нами</span></a>
+          </div>
+
+        </nav>
+        <div class="header__content">
+          <ul class="header__list">
+            <li class="header__item">
+
+              <h3 class="header__item-title">Металлорежущий
+инструмент</h3>
+              <p class="header__item-text">Компания «Дипар» - это поставка полного спектра инструмента для металлообработки собственного производства и известных мировых производителей.</p>
+              <picture class="header__item-picture">
+                <img width="500" height="700" src="img/head-drill.png" srcset="img/head-drill@2x.png 2x" alt="Инструмент">
+              </picture>
+              <a class="header__item-link anchor" href="#tool-metal">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="24" stroke="#38AAF6" stroke-width="2"/>
+                  <path d="M24.0099 30.29L15.4105 21.6903C14.8632 21.1433 14.8632 20.2563 15.4105 19.7096C15.9573 19.1627 16.8442 19.1627 17.391 19.7096L25.0001 27.3189L32.609 19.7098C33.1561 19.163 34.0429 19.163 34.5897 19.7098C35.1368 20.2566 35.1368 21.1435 34.5897 21.6905L25.9902 30.2902C25.7166 30.5636 25.3585 30.7002 25.0002 30.7002C24.6417 30.7002 24.2833 30.5634 24.0099 30.29Z" fill="white"/>
+                </svg>
+                <span>Подробнее</span>
+              </a>
+            </li>
+            <li class="header__item">
+
+              <h3 class="header__item-title">Ручной<br> инструмент</h3>
+              <p class="header__item-text">Компания «Дипар» - это поставка полного спектра инструмента для металлообработки собственного производства и известных мировых производителей.</p>
+              <picture class="header__item-picture">
+                <img width="500" height="700" src="img/head-drill.png" srcset="img/head-drill@2x.png 2x" alt="Инструмент">
+              </picture>
+              <a class="header__item-link anchor" href="#tool-hand">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="24" stroke="#38AAF6" stroke-width="2"/>
+                  <path d="M24.0099 30.29L15.4105 21.6903C14.8632 21.1433 14.8632 20.2563 15.4105 19.7096C15.9573 19.1627 16.8442 19.1627 17.391 19.7096L25.0001 27.3189L32.609 19.7098C33.1561 19.163 34.0429 19.163 34.5897 19.7098C35.1368 20.2566 35.1368 21.1435 34.5897 21.6905L25.9902 30.2902C25.7166 30.5636 25.3585 30.7002 25.0002 30.7002C24.6417 30.7002 24.2833 30.5634 24.0099 30.29Z" fill="white"/>
+                </svg>
+                <span>Подробнее</span>
+              </a>
+            </li>
+            <li class="header__item">
+
+              <h3 class="header__item-title">Абразивный<br> инструмент</h3>
+              <p class="header__item-text">Компания «Дипар» - это поставка полного спектра инструмента для металлообработки собственного производства и известных мировых производителей.</p>
+              <picture class="header__item-picture">
+                <img width="500" height="700" src="img/head-drill.png" srcset="img/head-drill@2x.png 2x" alt="Инструмент">
+              </picture>
+              <a class="header__item-link anchor" href="#tool-abrasive">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="24" stroke="#38AAF6" stroke-width="2"/>
+                  <path d="M24.0099 30.29L15.4105 21.6903C14.8632 21.1433 14.8632 20.2563 15.4105 19.7096C15.9573 19.1627 16.8442 19.1627 17.391 19.7096L25.0001 27.3189L32.609 19.7098C33.1561 19.163 34.0429 19.163 34.5897 19.7098C35.1368 20.2566 35.1368 21.1435 34.5897 21.6905L25.9902 30.2902C25.7166 30.5636 25.3585 30.7002 25.0002 30.7002C24.6417 30.7002 24.2833 30.5634 24.0099 30.29Z" fill="white"/>
+                </svg>
+                <span>Подробнее</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    
+    <section class="classification">
+      <div class="classification__left-block">
+        <h2 class="classification__title">Классификация разверток</h2>
+        <p class="classification__description">В металлообработке применяются различные типы разверток, подразделяемые по следующим признакам:</p>
+      </div>
+      <div class="classification__right-block">
+        <h3 class="classification__caption">Форма обрабатываемого отверстия:</h3>
+        <ul class="classification__list">
+          <li class="classification__item">Цилиндрические развертки</li>
+          <li class="classification__item">Конические развертки под различные типы конусов</li>
+          <li class="classification__item">Развертки ступенчатые</li>
+        </ul>
+        <h3 class="classification__caption">Точность развертки отверстия:</h3>
+        <ul class="classification__list">
+          <li class="classification__item">Номер квалитета для цилиндрических инструментов</li>
+          <li class="classification__item">Уровень обработки отверстия (черновой, промежуточный, чистовой) – для конических</li>
+          <li class="classification__item">Регулируемые развертки – раздвижные, шкворневые или разжимные</li>
+        </ul>
+        <h3 class="classification__caption">Способ зажима:</h3>
+        <ul  class="classification__list">
+          <li class="classification__item">Ручные с квадратным хвостовиком</li>
+          <li class="classification__item">Цилиндрический хвостовик (машинные развертки)</li>
+          <li class="classification__item">Конические машинные</li>
+          <li class="classification__item">Машинные насадные</li>
+        </ul>
+        <p class="classification__addition">Также развертки подразделяются по количеству режущих кромок, материалу и форме канавок для отвода стружки (спиральные или прямые)</p>
+      </div>
+    </section>
+
+    <section class="makers">
+      <div class="makers__left-block">
+        <h2 class="makers__title">Мы работаем с этими производителями</h2>
+        <p class="makers__description">В металлообработке применяются различные типы разверток, подразделяемые по следующим признакам:</p>
+      </div>
+      <div class="makers__right-block">
+        <ul class="makers__list">
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+          <li class="makers__item">
+            <article class="makers__card">
+              <img src="makers__card-logo" alt="">
+              <p class="makers__card-name"></p>
+              <a class="makers__card-link" href="#">Подробнее о поставщике</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Каталог товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <article class="catalog__card">
+            <img class="catalog__card-img" src="" alt="">
+            <p class="catalog__card-name"></p>
+            <p class="catalog__card-description"></p>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__card">
+            <img class="catalog__card-img" src="" alt="">
+            <p class="catalog__card-name"></p>
+            <p class="catalog__card-description"></p>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__card">
+            <img class="catalog__card-img" src="" alt="">
+            <p class="catalog__card-name"></p>
+            <p class="catalog__card-description"></p>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__card">
+            <img class="catalog__card-img" src="" alt="">
+            <p class="catalog__card-name"></p>
+            <p class="catalog__card-description"></p>
+          </article>
+        </li>
+      </ul>
+      <div class="catalog__more">
+        <p>Посмотреть полный каталог</p>
+        <a href="#">Перейти</a>
+      </div>
+    </section>
+
+    <section class="construction">
+      <h2 class="construction__title">Конструкция развертки</h2>
+      <div class="construction__content">
+        <p>Высокое качество обработки обеспечивает конструкция развертки – большое количество режущих кромок обеспечивающих небольшой припуск при снятии металла. 
+          Процесс резания осуществляется при вращении и одновременном поступательном движении инструмента вдоль оси обрабатываемого отверстия. </p>
+        <p>Инструмент имеет от 6 до 16 зубьев неравномерно (как правило) распределенных по окружности для повышения качества обработки. Рассмотрим 
+          конструкцию на примере ручной развертки цельной с хвостовиком цилиндрической формы. Инструмент состоит из трех основных частей – рабочей, 
+          шейки и хвостовика. В свою очередь рабочая часть развертки состоит из направляющей, режущей и калибрующих частей, а также обратного конуса. 
+          Основную часть процесса выполняет режущая часть, которая у ручного инструмента значительно длиннее, чем у машинного. </p>
+        </div>
+    </section>
+
+    <section class="reception">
+      <div class="reception__block">
+        <h2 class="reception__title">Основные приемы работы с развертками</h2>
+        <p class="reception__content">Сверло для подготовки отверстия подбирается под диаметры разверток по металлу. Обязательно должен быть небольшой припуск – сверло должно быть меньше на 0,2 – 0,3 мм при черновой развертке, и не более чем 0,05 – 0,1 мм при чистовой. Значения припусков, более указанных, могут стать причиной быстрого износа заборной части развертки, ухудшению точности результата и качества поверхности.</p>
+      </div>
+      
+      <img class="reception__image" src="img/tooling.jpg" alt="картинка с инструментами">
+      <div class="reception__block">
+        <h3 class="reception__caption">При ручной развертке:</h3>
+        <ul class="reception__recommendation-list">
+          <li class="reception__recommendation-item">Развертка крепится в воротке и смазывается</li>
+          <li class="reception__recommendation-item">Заборная часть должна входить таким образом, чтобы полностью совпали оси развертки и отверстия.</li>
+          <li class="reception__recommendation-item">Для проверки положения развертки можно использовать угольник в двух плоскостях расположенных перпендикулярно по отношению друг к другу</li>
+          <li class="reception__recommendation-item">Вращение начинайте вправо с небольшим давлением сверху.</li>
+          <li class="reception__recommendation-item">Вращение осуществляйте плавно, на небольшой скорости, без рывков. Не ускоряйте вращение даже при легком ходе.</li>
+          <li class="reception__recommendation-item">Обратное вращение недопустимо, так как возможна поломка режущих кромок и задиров на поверхности отверстия. Развертка осуществляется за один проход с одной стороны</li>
+        </ul>
+      </div>
+      <div class="reception__block">
+        <h3 class="reception__caption">Советы при машинной развертке:</h3>
+        <ul class="reception__recommendation-list">
+          <li class="reception__recommendation-item">Развертка крепится так же, как и сверло. Сам процесс сходен со сверлением и желательно его выполнять без смены установки детали, сразу после подготовки отверстия.</li>
+          <li class="reception__recommendation-item">Часто развертка крепится в качающихся державках, что позволяет инструменту самоцентрироваться по оси отверстия.</li>
+          <li class="reception__recommendation-item">Желательно использование автоматической подачи, скорость резания должна быть в 2-3 раза ниже, чем при сверлении.</li>
+          <li class="reception__recommendation-item">Необходимо использование значительного количества смазки.</li>
+          <li class="reception__recommendation-item">Чем ниже количество оборотов и скорость подачи – тем выше качество отверстия и стойкость инструмента.</li>
+        </ul>
+      </div>
+      <div class="reception__block reception__block--gost">
+        <p>Действующие ГОСТы</p>
+        <p>Определяет параметры развертки ГОСТ 29240-91. Допуски регулирует ГОСТ 11173-76. Так же на каждый тип развертки есть свой действующий стандарт определяющий её конструкцию и размеры. На ручные цилиндрические - ГОСТ 7722-77, на машинные цельные – ГОСТ 1672-80 и т. д. для всех типов инструмента.</p>
+      </div>
+    </section>
+
+    <section class="prices">
+      <h2 class='prices__header'>Каталог товаров</h2>
+      <ul class="prices__list">
+        <li class="prices__item">
+          <article class="prices__card">
+            <img class="prices__card-img" src="" alt="">
+            <p class="prices__card-name">Название каталога в две строчки</p>
+            <a class="prices__card-link" href="">Скачать (100 мб)</a>
+          </article>
+        </li>
+        <li class="prices__item">
+          <article class="prices__card">
+            <img class="prices__card-img" src="" alt="">
+            <p class="prices__card-name">Название каталога в две строчки</p>
+            <a class="prices__card-link" href="">Скачать (100 мб)</a>
+          </article>
+        </li>
+        <li class="prices__item">
+          <article class="prices__card">
+            <img class="prices__card-img" src="" alt="">
+            <p class="prices__card-name">Название каталога в две строчки</p>
+            <a class="prices__card-link" href="">Скачать (100 мб)</a>
+          </article>
+        </li>
+        <li class="prices__item">
+          <article class="prices__card">
+            <img class="prices__card-img" src="" alt="">
+            <p class="prices__card-name">Название каталога в две строчки</p>
+            <a class="prices__card-link" href="">Скачать (100 мб)</a>
+          </article>
+        </li>
+        <li class="prices__item">
+          <article class="prices__card">
+            <img class="prices__card-img" src="" alt="">
+            <p class="prices__card-name">Название каталога в две строчки</p>
+            <a class="prices__card-link" href="">Скачать (100 мб)</a>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="banner">
+      <h2 class="visually-hidden">Баннер</h2>
+      <div class="banner__wrapper wrapper wrapper--no-padding">
+        <p class="banner__text">Мы не продаём — </p>
+        <picture class="banner__picture">
+          <img width="793" height="180" src="img/banner-text.png" srcset="img/banner-text@2x.png 2x" alt="Мы решаем задачи бизнеса">
+        </picture>
+      </div>
+    </section>
+
+    <section class="source">
+      <a id="source"></a>
+      <h2 class="visually-hidden">Ссылки</h2>
+      <div class="source__wrapper wrapper">
+        <ul class="source__list">
+          <li class="source__list-item">
+            <ul class="source__sublist">
+              <li class="source__sublist-title source__sublist-item">
+                <h3>Металлорежущий инструмент</h3>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Центровочные и спиральные кольца</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Концевые фрезы</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Осевой инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Резьбонарезной инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Зенковки, церковки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Развертки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Разный инструмент и оснастка</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Токарная обработка</a>
+              </li>
+            </ul>
+          </li>
+          <li class="source__list-item">
+            <ul class="source__sublist">
+              <li class="source__sublist-title source__sublist-item">
+                <h3>Ручной инструмент</h3>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Центровочные и спиральные кольца</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Концевые фрезы</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Осевой инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Резьбонарезной инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Зенковки, церковки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Развертки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Разный инструмент и оснастка</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Токарная обработка</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Разный инструмент и оснастка</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Токарная обработка</a>
+              </li>
+            </ul>
+          </li>
+          <li class="source__list-item">
+            <ul class="source__sublist">
+              <li class="source__sublist-title source__sublist-item">
+                <h3>Абразивный инструмент</h3>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Центровочные и спиральные кольца</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Концевые фрезы</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Осевой инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Резьбонарезной инструмент</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Зенковки, церковки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Развертки</a>
+              </li>
+            </ul>
+          </li>
+          <li class="source__list-item">
+            <ul class="source__sublist">
+              <li class="source__sublist-title source__sublist-item source__sublist-title--one">
+                <h3>Услуги</h3>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Технологический аудит</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Написание технологии и управляющих программ для металлообработки</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Проектировка и изготовление инструмента под заказ</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Испытания и подбор ручного инструмента для металлообработки, на базе  нашей лаборатории</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Пусконаладочные работы пневмоинструмента</a>
+              </li>
+              <li class="source__sublist-item">
+                <a class="source__link" href="#">Гарантийное и постгарантийное обслуживание электро и пневмоинструмента</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <a id="footer"></a>
+      <div class="footer__wrapper wrapper">
+        <div class="footer__logo-container">
+          <picture class="footer__picture">
+            <img width="180" height="51" src="img/footer-logo.png" srcset="img/footer-logo@2x.png 2x" alt="Лого">
+          </picture>
+          <p class="footer__who">© 2007–2019 ООО "ДИПАР" <br> Флобер, описывая нервный припадок Эммы Бовари, переживает его сам.</p>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a class="footer__link anchor" href="#main">Главная</a></li>
+          <li class="footer__list-item"><a class="footer__link anchor" href="#service">Услуги</a></li>
+          <li class="footer__list-item"><a class="footer__link anchor" href="#about">О компании</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="news.html">Новости и статьи</a></li>
+          <li class="footer__list-item"><a class="footer__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="footer__list-item"><a class="footer__link anchor" href="#footer">Контакты</a></li>
+        </ul>
+        <div class="footer__contacts">
+          <a class="footer__phone" href="tel:+78005553555">8 800 555 35 55</a>
+          <a class="footer__with-us" href="#"><span>Связаться с нами</span></a>
+          <p class="footer__copyright">Сайт разработан:</p>
+          <a class="footer__developer" href="https://s-pushkin.ru/"><span>Стартап студия Pushkin</span></a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

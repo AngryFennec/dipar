@@ -1,0 +1,24 @@
+.makers {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    color: $black;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.makers__title {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 370px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.makers__description {
+    font-size: 18px;
+    line-height: 28px;  
+    max-width: 485px;
+}

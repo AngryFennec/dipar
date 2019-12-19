@@ -1,0 +1,148 @@
+.reception {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    color: $black;
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
+.reception__title {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 490px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    //margin-right: 70px;
+}
+
+.reception__block {
+    display: flex;
+    justify-content: space-between;
+
+    &--gost {
+        background-color: $blue;
+        border-radius: 2px;
+        color: white;
+        padding: 60px;
+        margin-top: 29px;
+
+        & .reception__gost-caption {
+            font-size: 34px;
+            line-height: 46px;
+            font-weight: 900;
+            margin: 0;
+            max-width: 235px;
+        }
+    }
+}
+
+.reception__gost-description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 578px;
+}
+.reception__content {
+    max-width: 639px;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 5px;
+}
+
+.reception__image {
+    margin-bottom: 40px;
+    margin-top: 34px;
+    width: 100%;
+    height: auto;
+}
+
+.reception__recommendation-list {
+    list-style: none;
+    max-width: 650px;
+    padding: 0;
+    margin: 0 0 31px 0;
+    margin-top: 65px;
+    font-size: 18px;
+    line-height: 28px;
+
+    &--line {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+.reception__recommendation-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    margin-left: 12px;
+
+    &::before {
+        content: "";
+        background-color: $blue;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        left: 0;
+        top: 9px;
+
+    }
+}
+
+.reception__caption {
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 900;
+    max-width: 480px;
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .reception__title {
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .reception__caption {
+        font-size: 23px;
+        line-height: 120%;
+    }
+    
+    .reception__content {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .reception__block {
+        flex-direction: column;
+        &--gost {
+            padding: 30px 20px;
+        }
+    }
+
+    .reception__caption,
+    .reception__recommendation-list {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .reception__gost-description,
+    .reception__block--gost .reception__gost-caption {
+        max-width: 100%;
+    }
+
+    .reception__block--gost .reception__gost-caption {
+        margin-bottom: 30px;
+    }
+
+    .reception__title,
+    .reception__content {
+        max-width: 100%;
+    }
+
+}

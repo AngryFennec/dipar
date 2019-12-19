@@ -41,6 +41,10 @@
         font-size: 20px;
         line-height: 120%;
     }
+
+    .construction__content {
+        flex-shrink: 0;
+    }
 }
 
 @media (max-width: 960px) {

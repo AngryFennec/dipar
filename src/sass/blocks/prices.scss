@@ -1,0 +1,86 @@
+.prices {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+    color: $black;
+    
+    margin-bottom: 100px;
+}
+
+.prices__wrapper {
+    padding: 50px 20px;
+    background-color: #F0F0F0;
+}
+
+.prices__title {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 46px;
+    color: #404040;
+    margin-top: 11px;
+    padding-left: 10px;
+}
+
+.prices__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.prices__card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    max-width: 213px;
+}
+
+.prices__card-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.prices__card-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 27px;
+    position: relative;
+    color: #6C6C6C;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 20px;
+        top: 5px;
+        left: 1px;
+        background: url('../img/download-icon.svg') no-repeat 0 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 27px;
+        height: 1px;
+        width: 121px;
+        background-color: $blue;
+    }
+
+
+}
+
+.prices .swiper-slide{
+    display: flex;
+    justify-content: center;
+
+}
+
+

@@ -7,3 +7,5 @@
 //= modules/service.js
 //= modules/anchors.js
 //= modules/news.js
+//= modules/landing.js
+

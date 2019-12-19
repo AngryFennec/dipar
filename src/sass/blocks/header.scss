@@ -283,3 +283,160 @@ color: #FFFFFF;
     max-width: 100%;
   }
 }
+
+//service 
+.header__scroll-block {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  cursor: pointer;
+}
+
+.header__scroll-link {
+  color: #46535D;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-block;
+  transform: rotate(-90deg) translateX(-50%) translateY(-20px);
+}
+
+.header__scroll-image {
+  position: absolute;
+  left: 90px;
+  bottom: 12px;
+}
+.header__back-link {
+  display: inline-block;
+  margin-top: 117px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  padding-left: 35px;
+
+  color: #DFE6EA;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $blue;
+    width: 135px;
+    bottom: -5px;
+    right: 0;
+
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    background: url("../img/header-arrow.svg") no-repeat 0 0;
+    width: 22px;
+    top: 7px;
+    left: 0;
+
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.header--service {
+  min-height: 1000px;
+
+  & .header__wrapper {
+    min-height: 1000px;
+    position: relative;
+  }
+}
+
+.header__center-wrapper {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+
+  & .header__page-title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    color: #DFE6EA;
+    margin-bottom: 30px;
+  }
+
+  & .header__description {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #DFE6EA;
+    max-width: 792px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .header__center-wrapper {
+ 
+    & .header__page-title {
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .header__center-wrapper {
+ 
+    & .header__page-title {
+      text-align: center;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+  }
+
+  .header--service {
+    min-height: 800px;
+  
+    & .header__wrapper {
+      min-height: 800px;
+      position: relative;
+    }
+  }
+
+  .header__scroll-block  {
+    bottom: 30px;
+  }
+
+  .header__back-link {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 590px) {
+  .header--service {
+    padding-bottom: 40px;
+    min-height: 700px;
+  
+    & .header__wrapper {
+      min-height: 700px;
+    }
+  }
+
+  .header__scroll-block  {
+    display: none;
+  }
+
+  .header__back-link {
+    margin-top: 50px;
+  }
+}

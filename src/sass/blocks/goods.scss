@@ -31,6 +31,7 @@
     align-items: center;
     min-height: 320px;
     border-radius: 2px;
+    cursor: pointer;
 
     & p {
         width: 100%;
@@ -187,7 +188,7 @@
     .goods {
         padding-bottom: 0;
     }
-    
+
     .goods__card {
         max-width: 100%;
     }

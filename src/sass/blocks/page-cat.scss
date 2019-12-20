@@ -3,7 +3,8 @@
     min-height: 709px;
     background: linear-gradient(0deg, #007DD6, #007DD6), linear-gradient(0deg, #29A5F8, #29A5F8), radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
     color: #ffffff;
-    padding: 0 18.6%;
+    padding-left: 27px;
+    padding-right: 27px;
   }
   .header {
     min-height: 709px;
@@ -32,7 +33,8 @@
 @include laptop {
   .page-cat {
     .header__wrapper {
-      padding: 0 10%;
+      padding-left: 27px;
+      padding-right: 27px;
     }
   }
 }

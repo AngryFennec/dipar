@@ -54,3 +54,8 @@ var pricesSwiper;
 //     })
     
 })();
+
+
+
+	
+	

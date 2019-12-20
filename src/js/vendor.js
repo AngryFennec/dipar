@@ -5,3 +5,4 @@
 
 //= vendor/picturefill.js
 //= vendor/swiper.js
+//= vendor/nouislider.js

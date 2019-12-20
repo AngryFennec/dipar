@@ -4,13 +4,14 @@
     padding: 0 20px;
     margin: 0 auto;
     color: $black;
-    
+
     margin-bottom: 100px;
 }
 
 .prices__wrapper {
     padding: 50px 20px;
     background-color: #F0F0F0;
+    max-width: 1200px;
 }
 
 .prices__title {
@@ -44,6 +45,10 @@
     line-height: 22px;
     color: #4A4A4A;
     margin-bottom: 10px;
+}
+
+.prices__item {
+  width:220px;
 }
 
 .prices__card-link {
@@ -82,5 +87,3 @@
     justify-content: center;
 
 }
-
-

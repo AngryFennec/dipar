@@ -198,3 +198,18 @@
         width: 100%;
     }
 }
+
+//filter
+
+
+.goods--filter .goods__list {
+    flex-wrap: wrap;
+}
+
+.goods__filter {
+    outline: 1px solid $blue;
+    width: 100%;
+    max-width: 255px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}

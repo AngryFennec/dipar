@@ -8,4 +8,5 @@
 //= modules/anchors.js
 //= modules/news.js
 //= modules/landing.js
+//= modules/filter.js
 

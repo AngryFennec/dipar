@@ -34,5 +34,5 @@ if (pricesSelector) {
 //     window.addEventListener('resize', function() {
 //         setTimeout(initSwiper, 500)
 //     })
-
 })();
+

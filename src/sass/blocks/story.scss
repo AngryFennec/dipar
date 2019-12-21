@@ -1,0 +1,165 @@
+.story__wrapper {
+  display: flex;
+  max-width: 1254px;
+  padding: 0 27px;
+  padding-top: 30px;
+  padding-bottom: 160px;
+}
+
+.story__date {
+font-family: $font;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+color: #5F5F5F;
+margin-bottom: 0;
+}
+
+.story__title {
+  font-family: $font;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 54px;
+color: #272727;
+margin-top: 14px;
+}
+
+.story__text {
+  font-family: $font;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #272727;
+}
+
+.story__link {
+  font-family: $font;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+color: #272727;
+text-decoration: none;
+border-bottom: 1px solid $blue;
+cursor: pointer;
+transition: 0.2s;
+&:hover {
+  transition: 0.2s;
+  color:$blue;
+}
+
+}
+
+.story__aside {
+    padding-top: 40px;
+}
+
+.story__aside-title {
+  font-family: $font;
+font-style: normal;
+font-weight: 800;
+font-size: 26px;
+line-height: 35px;
+color: #272727;
+}
+
+.story__aside-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.story__aside-item {
+  padding-top: 14px;
+  padding-bottom: 0px;
+  border-top: 1px solid #c4c4c4;
+
+  &:last-child {
+  border-bottom: 1px solid #c4c4c4;
+  }
+
+}
+
+.story__aside-link {
+  text-decoration: none;
+  font-family: $font;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+color: #272727;
+border-bottom: 1px solid $blue;
+cursor: pointer;
+transition: 0.2s;
+&:hover {
+  transition: 0.2s;
+  color:$blue;
+}
+}
+
+.story__aside-text {
+  font-family: $font;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #5F5F5F;
+margin-top: 10px;
+}
+
+.story__content {
+  width: 70%;
+  margin-right: 5%;
+}
+
+.story__img {
+  & img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+}
+
+.story__questions {
+  margin-top: 40px;
+  background-color: #F4F4F4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: $font;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+
+color: #272727;
+
+
+}
+
+.story__img-container {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+  .story__content {
+    width: 100%;
+  }
+  .story__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.story__img {
+  & img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+}

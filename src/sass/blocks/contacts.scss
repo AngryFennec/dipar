@@ -152,8 +152,8 @@ margin: 0;
 
 .contacts__map-wrapper {
   position: absolute;
-  top: 30px;;
-  right: -55px;
+  top: 37px;;
+  right: 0px;
   z-index: 10;
   width:718px;
   height: 552px;
@@ -193,11 +193,13 @@ box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
 .contacts__map-wrapper {
   position: relative;
   width: 90%;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .contacts__title {
   font-size: 30px;
-    line-height: 114%;
+    line-height: 120%;
 }
 .contacts__btn {
   width: 130px;

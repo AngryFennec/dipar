@@ -98,7 +98,7 @@ input:checked + .filter__label {
 }
 
 .filter__wrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     border-bottom: 1px solid #F0F0F0;
     padding-bottom: 9px;
@@ -107,6 +107,10 @@ input:checked + .filter__label {
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
+
+.filter__subblock .filter__wrapper {
+    display: flex;
 }
 
 .filter__block-title {
@@ -139,7 +143,6 @@ input:checked + .filter__label {
 
 .filter {
     margin-bottom: 40px;
-    margin-right: 10px;
 }
 
 .filter{
@@ -234,14 +237,17 @@ input:checked + .filter__label {
 .filter__wrapper--noborder {
     border: none;
 }
+
+.hidden {
+    display: flex;
+}
 @media (max-width: 768px) {
+    
+
     .filter__form {
         display: flex;
         flex-wrap: wrap;
-    }
-    .filter__wrapper,
-    .filter__subblock-title {
-        display: none;
+        justify-content: space-between;
     }
 
     .filter {
@@ -249,8 +255,22 @@ input:checked + .filter__label {
     }
 
     .filter__block {
-        width: 50%;
+        width: 45%;
     }
+
+    .filter__block--width {
+        width: 100%;
+    }
+    .filter__wrapper {
+        border-bottom: none;
+        display: flex;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+ 
 }
 
 @media (max-width: 500px) {

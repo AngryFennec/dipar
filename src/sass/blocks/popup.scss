@@ -1,0 +1,113 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.popup__btn {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.popup .feadback {
+    max-width: 452px;
+    padding-bottom: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 50px;
+}
+
+.popup .feadback__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.popup .feadback__form {
+    flex-direction: column;
+}
+
+.popup .feadback__info {
+    flex-direction: column;
+}
+
+.popup .feadback__contact-list {
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 0;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    padding-bottom: 0;
+    //flex-direction: column;
+}
+
+.popup .feadback__field {
+    margin-bottom: 10px;
+}
+
+.popup .feadback__contact p {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.popup .feadback__contact a {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.popup .btn {
+    margin-top: 13px;
+}
+
+.popup .feadback__agree {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+
+    & a {
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+.popup .feadback__contact {
+    flex-direction: column;
+    margin-right: 0;
+    padding-top: 12px;
+}
+
+@media (max-width: 410px) {
+    .popup .feadback__title {
+        font-size: 25px;
+        line-height: 30px;
+
+    }
+}
+
+@media (max-width: 365px) {
+    .popup .feadback {
+        padding: 30px 20px;
+    }
+}

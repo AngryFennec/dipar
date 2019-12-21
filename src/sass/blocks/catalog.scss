@@ -5,9 +5,11 @@
 .catalog__title {
   max-width: 282px;
   margin-top: 0;
-  margin-right: 2.5%;
+  line-height: 120%;
+  margin-right: 5%;
   color: #ffffff;
   padding-left: 0;
+  margin-top: 20px;
 }
 
 .catalog__list {
@@ -103,6 +105,10 @@ width: 100%;
     &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+  .catalog__title {
+      font-size: 30px;
+      line-height: 120%;
   }
 }
 

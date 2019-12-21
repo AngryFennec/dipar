@@ -81,8 +81,10 @@ margin-bottom: 50px;
 .tool__wrapper {
   display: flex;
   padding-top: 50px;
-  padding-left: 364px;
+  //padding-left: 364px;
   padding-bottom: 30px;
+  max-width: 1254px;
+  margin: 0 auto;
 
   &:hover {
     background: linear-gradient(0deg, #007DD6, #007DD6), linear-gradient(0deg, #29A5F8, #29A5F8), radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
@@ -141,7 +143,6 @@ margin-bottom: 50px;
   .tool__wrapper {
     display: flex;
     padding-top: 50px;
-    padding-left: 10%;
     padding-bottom: 30px;
   }
 

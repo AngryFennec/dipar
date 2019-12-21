@@ -1,7 +1,7 @@
 .source {}
 
 .source__wrapper {
-  max-width: 1200px;
+  max-width: 1254px;
   margin: 0 auto;
   padding-left: 27px;
   padding-right: 27px;
@@ -93,8 +93,10 @@ width: 290px;
 }
 
 @include mobile {
+
   .source__list {
-    margin: 0 auto;
+    //margin: 0 auto;
+    margin: 0;
   flex-wrap: wrap;
   max-width: 300px;
   justify-content: space-between;

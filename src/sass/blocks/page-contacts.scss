@@ -1,11 +1,17 @@
 .page-contacts {
   .header__wrapper {
     min-height: 710px;
-    background: url("../img/header-news.png") no-repeat 100% 100%;
+    background: url("../img/bg.png") no-repeat 83% 92%;
+    background-size: 100%;
     mix-blend-mode: lighten;
-    max-width: 1200px;
+
   }
   .header {
     min-height: 710px;
+  }
+  .header__container {
+        max-width: 1200px;
+      margin: 0 auto;
+
   }
 }

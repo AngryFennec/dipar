@@ -33,6 +33,13 @@ padding: 0;
   margin-right: 24px;
   background-color: #ffffff;
   margin-bottom: 24px;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.2s;
+    .news__title {
+      color: #38AAF6;
+    }
+  }
 
   &:first-child {
     width: 588px;
@@ -126,7 +133,10 @@ display: block;
   .news__wrapper {
     max-width: 588px;
   }
-
+  .news__title {
+      font-size: 30px;
+      line-height: 120%;
+  }
   .news__item {
 
     &:nth-child(4n-1) {

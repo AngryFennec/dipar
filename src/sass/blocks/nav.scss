@@ -6,6 +6,8 @@
   color: #FFF;
   height: 50px;
   padding-top: 38px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu__link {
@@ -54,6 +56,7 @@ border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
 }
 
 #menu-toggle {

@@ -27,7 +27,7 @@ text-decoration: none;
 .footer__wrapper {
   display: flex;
   padding-top: 40px;
-  max-width: 1200px;
+  max-width: 1254px;
   margin: 0 auto;
   padding-left: 27px;
   padding-right: 27px;
@@ -170,6 +170,7 @@ transition: 0.2s;
     }
 
     .footer__list {
+      display: none;
       order: 1;
       width: 90%;
       max-width: 90%;

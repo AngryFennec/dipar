@@ -37,6 +37,7 @@
           </div>
 
         </nav>
+        <div class="header__container--filter">
         <section class="header__breadcrumbs breadcrumbs">
           <h2 class="visually-hidden">Хлебные крошки</h2>
           <a class="breadcrumbs__item breadcrumbs__item--home" href="index.html"><span>на главную</span></a>
@@ -51,6 +52,7 @@
         </section>
             <h1 class="header__page-title">Каталог товаров</h1>
                 </div>
+              </div>
     </article>
     
     <section class="goods goods--filter">
@@ -201,15 +203,27 @@
                 <input class="visually-hidden" type="radio" name="supply" id="supply-no" value="supply-no">
                 <label class="filter__label filter__label--radio" for="supply-no">Нет</label>
 
-              <div class="filter__block filter__block--width">
+              <div class="filter__subblock filter__block--width">
                 <p class="filter__subblock-title">Угол стружечной канавки</p>
-                <div class="filter__wrapper filter__wrapper--row">
+                <div class="filter__wrapper filter__wrapper--row filter__wrapper--margin">
                   <input class="visually-hidden" type="radio" name="corner" id="first-type" value="first-type">
-                  <label class="filter__label filter__label--radio filter__label--image" for="first-type"><img src="img/filter-icon.png" alt=""></label>
+                  <label class="filter__label filter__label--radio filter__label--image" for="first-type">
+                    <picture>
+                      <img width="46" height="46" src="img/filter-icon.png" alt="картинка" srcset="img/filter-icon@2x.png 2x">
+                    </picture>
+                  </label>
                   <input class="visually-hidden" type="radio" name="corner" id="second-type" value="second-type">
-                  <label class="filter__label filter__label--radio filter__label--image" for="second-type"><img src="img/filter-icon.png" alt=""></label>
+                  <label class="filter__label filter__label--radio filter__label--image" for="second-type">
+                    <picture>
+                      <img width="46" height="46" src="img/filter-icon.png" alt="картинка" srcset="img/filter-icon@2x.png 2x">
+                    </picture>
+                  </label>
                   <input class="visually-hidden" type="radio" name="corner" id="third-type" value="third-type">
-                  <label class="filter__label filter__label--radio filter__label--image" for="third-type"><img src="img/filter-icon.png" alt=""></label>
+                  <label class="filter__label filter__label--radio filter__label--image" for="third-type">
+                    <picture>
+                      <img width="46" height="46" src="img/filter-icon.png" alt="картинка" srcset="img/filter-icon@2x.png 2x">
+                    </picture>
+                  </label>
                 </div>
               </div>
                 
@@ -235,9 +249,17 @@
                 <p class="filter__subblock-title"></p>
                 <div class="filter__wrapper filter__wrapper--row filter__wrapper--noborder">
                   <input class="visually-hidden" type="radio" name="chamfer-type" id="chamfer-first-type" value="chamfer-first-type">
-                  <label class="filter__label filter__label--radio filter__label--image" for="chamfer-first-type"><img src="img/filter-icon.png" alt=""></label>
+                  <label class="filter__label filter__label--radio filter__label--image" for="chamfer-first-type">
+                    <picture>
+                      <img width="46" height="46" src="img/filter-icon.png" alt="картинка" srcset="img/filter-icon@2x.png 2x">
+                    </picture>
+                  </label>
                   <input class="visually-hidden" type="radio" name="chamfer-type" id="chamfer-second-type" value="chamfer-second-type">
-                  <label class="filter__label filter__label--radio filter__label--image" for="chamfer-second-type"><img src="img/filter-icon.png" alt=""></label>
+                  <label class="filter__label filter__label--radio filter__label--image" for="chamfer-second-type">
+                    <picture>
+                      <img width="46" height="46" src="img/filter-icon.png" alt="картинка" srcset="img/filter-icon@2x.png 2x">
+                    </picture>
+                  </label>
                 </div>
               </div>
 
@@ -256,112 +278,144 @@
         <ul class="goods__list">
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-1.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-1.png" alt="Изображение товара" srcset="img/catalog-1@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Magafor Bi-face M 845-MH</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-2.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-2.png" alt="Изображение товара" srcset="img/catalog-2@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST900-NPTF</a></p>
               <p class="goods__card-description">Фреза резьбовая для нарезания резьбы NPTF</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара" srcset="img/catalog-3@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Пластина резьбовая трехзубая для нарезания внутренней метрической резьбы с частичным профилем</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара" srcset="img/catalog-4@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-5.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-5.png" alt="Изображение товара" srcset="img/catalog-5@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Magafor Bi-face M 845-MH</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-6.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-6.png" alt="Изображение товара" srcset="img/catalog-6@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST900-NPTF</a></p>
               <p class="goods__card-description">Фреза резьбовая для нарезания резьбы NPTF</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара" srcset="img/catalog-3@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Пластина резьбовая трехзубая для нарезания внутренней метрической резьбы с частичным профилем</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара" srcset="img/catalog-4@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-1.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-1.png" alt="Изображение товара" srcset="img/catalog-1@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Magafor Bi-face M 845-MH</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-2.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-2.png" alt="Изображение товара" srcset="img/catalog-2@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST900-NPTF</a></p>
               <p class="goods__card-description">Фреза резьбовая для нарезания резьбы NPTF</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара" srcset="img/catalog-3@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Пластина резьбовая трехзубая для нарезания внутренней метрической резьбы с частичным профилем</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара" srcset="img/catalog-4@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-5.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-5.png" alt="Изображение товара" srcset="img/catalog-5@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Magafor Bi-face M 845-MH</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-6.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-6.png" alt="Изображение товара" srcset="img/catalog-6@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST900-NPTF</a></p>
               <p class="goods__card-description">Фреза резьбовая для нарезания резьбы NPTF</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-3.png" alt="Изображение товара" srcset="img/catalog-3@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Пластина резьбовая трехзубая для нарезания внутренней метрической резьбы с частичным профилем</p>
             </article>
           </li>
           <li class="goods__item">
             <article class="goods__card">
-              <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара">
+              <picture>
+                <img class="goods__card-img" src="img/catalog-4.png" alt="Изображение товара" srcset="img/catalog-4@2x.png 2x">
+              </picture>
               <p><a class="goods__card-name" href="#">Stamo ST-F</a></p>
               <p class="goods__card-description">Разьбонарезная фреза с правосторонними спиральными канавками 27° для нарезания метрической резьбы и снятия фасок</p>
             </article>

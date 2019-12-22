@@ -78,6 +78,10 @@ input:checked + .filter__label {
     }
 }
 
+.filter__wrapper--margin {
+    margin-left: -40px;
+}
+
 .filter__block-title {
     font-weight: bold;
     font-size: 14px;

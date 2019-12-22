@@ -13,7 +13,6 @@
         document.querySelector('.popup').style.display = 'block';
     });
     document.addEventListener('keydown', function(e) {
-        e.preventDefault();
         if (e.keyCode === 27) {
             document.querySelector('.popup').style.display = 'none';
         }

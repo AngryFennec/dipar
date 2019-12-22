@@ -1,0 +1,25 @@
+.documents__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px 0 50px;
+}
+
+.documents__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.documents__item {
+    width: auto !important;
+}
+
+.documents__title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: #414141;
+    margin-bottom: 30px;
+}

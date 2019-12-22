@@ -184,3 +184,9 @@
         right: 40px;
     }
 }
+
+@media (max-width: 450px) {
+    .prices__title {
+        max-width: 250px;
+    }
+}

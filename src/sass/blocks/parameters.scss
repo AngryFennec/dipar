@@ -61,6 +61,23 @@
 }
 
 @media (max-width: 960px) {
+  .parameters__table {
+      & tbody tr:hover {
+        background: white;
+
+        & td {
+          color: #414141;
+
+            &::before {
+              color: #B9B9B9;;
+            }
+        }
+    }
+
+    & tbody tr:nth-child(2n+1) {
+      background: #F4F4F4;
+  }
+}
     .parameters__title {
       font-size: 25px;
       line-height: 120%;

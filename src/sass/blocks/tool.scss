@@ -26,6 +26,7 @@ margin-bottom: 50px;
 
 .tool__picture-active {
   display: none;
+  margin-right: 120px;
 }
 
 .tool__content {
@@ -68,6 +69,9 @@ margin-bottom: 50px;
     margin-right: 110px;
   }
   .tool__picture {
+    margin-right: 0px;
+  }
+  .tool__picture-active {
     margin-right: 0px;
   }
 }

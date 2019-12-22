@@ -4,8 +4,8 @@
 
 var documentsSwiper;
 
-var documentsSelector = document.querySelectorAll('.documents__swiper');
-if (documentsSelector) {
+var documentsSelector = Array.from(document.querySelectorAll('.documents__swiper'));
+if (documentsSelector.length > 0) {
     documentsSwiper = new Swiper('.documents__swiper', {
         slidesPerView: 'auto',
         spaceBetween: 9,
@@ -68,9 +68,9 @@ if (document.querySelector('.parameters__table')) {
                 } else {
                     item.classList.add('hidden');
                 }
-                
+
             });
-            
+
         }
     })
 }

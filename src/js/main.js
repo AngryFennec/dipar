@@ -11,4 +11,4 @@
 //= modules/filter.js
 //= modules/card.js
 //= modules/popup.js
-
+//= modules/contacts.js

@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 35px 50px 30px  50px;
+    padding: 45px 50px 30px  50px;
 }
 
 .types__list {
@@ -16,13 +16,15 @@
 .types__card {
     width: 100%;
     max-width: 269px;
+    min-width: 269px;
+    min-height: 138px;
     border: 1px solid #F0F0F0;
     box-sizing: border-box;
     border-radius: 2px;
     display: flex;
     align-items: center;
     padding: 20px 15px;
-    margin: 4px;
+    margin: 3px;
 }
 
 .types__card-name {
@@ -43,5 +45,16 @@
 @media (max-width: 960px) {
     .types__wrapper {
         padding: 35px 25px 30px  25px;
+    }
+
+    .types__title {
+        font-size: 25px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 350px) {
+    .types__card {
+        min-width: 200px;
     }
 }

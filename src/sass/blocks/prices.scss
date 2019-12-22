@@ -4,9 +4,10 @@
     padding: 0 20px;
     margin: 0 auto;
     color: $black;
-
     margin-bottom: 100px;
 }
+
+
 
 .prices__wrapper {
     padding: 50px 20px;
@@ -51,6 +52,44 @@
   width:220px;
 }
 
+.prices__swiper {
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+.prices__next-button,
+.prices__prev-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid $blue;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 50px;
+    right: 0;
+    left: auto;
+
+    &::after {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 20px;
+        color: $blue;
+    }
+
+    &:hover {
+        border-color: $blue;
+        background: $blue;
+
+        &::after {
+            color: white;
+        }
+    }
+
+}
+
+.prices__prev-button {
+    right: 65px;
+}
+
 .prices__card-link {
     text-decoration: none;
     font-weight: bold;
@@ -78,12 +117,70 @@
         width: 121px;
         background-color: $blue;
     }
-
-
 }
 
 .prices .swiper-slide{
     display: flex;
     justify-content: center;
 
+}
+
+.prices--card {
+    padding: 0 50px;
+    padding-bottom: 0;
+    margin-bottom: 55px;
+    & .prices__wrapper {
+        max-width: 1100px;
+        padding: 30px 0;
+        padding-top: 0;
+        margin: 0 auto;
+        background: none;
+    }
+
+    & .prices__next-button {
+          border-color: #F0F0F0;
+      }
+
+    & .prices__prev-button  {
+        border-color: #F0F0F0;
+    }
+
+    & .prices__title {
+        padding: 0;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 38px;
+        color: #404040;
+        padding-top: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 990px) {
+    .prices--card {
+        padding: 0 25px;
+
+        & .prices__title {
+            font-size: 25px;
+            line-height: 120%;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .prices__next-button,
+    .prices__prev-button {
+        top: 60px;
+        width: 30px;
+        height: 30px;
+
+        &::after {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
+
+    .prices__prev-button {
+        right: 40px;
+    }
 }

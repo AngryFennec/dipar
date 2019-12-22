@@ -20,8 +20,11 @@
 
         & td {
             color: white;
-        }
 
+            &::before {
+              color: white;
+            }
+        }
     }
 }
 
@@ -57,8 +60,11 @@
     color: #414141;
 }
 
-
 @media (max-width: 960px) {
+    .parameters__title {
+      font-size: 25px;
+      line-height: 120%;
+    }
     .parameters {
         padding: 10px 25px 30px 25px;
     }
@@ -91,11 +97,37 @@
     .parameters__table td:before {
       content: attr(data-label);
       float: left;
-      text-transform: uppercase;
       font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #B9B9B9;
+    }
+
+    .parameters__table .parameters__value--first:after {
+      content: "";
+        position: absolute;
+        right: 20px;
+        top: 23px;
+        background: url("../img/filter-arrow.svg") no-repeat 0 0;
+        width: 12px;
+        height: 8px;
     }
 
     .parameters__value {
         width: 100%;
+        padding-right: 50px;
+        position: relative;
+    }
+
+    .parameters__table .parameters__value {
+      display: none;
+    }
+
+    .parameters__table .parameters__value--first {
+      display: block;
+    }
+
+    .parameters__table .hidden {
+      display: block;
     }
   }

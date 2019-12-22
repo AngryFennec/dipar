@@ -49,6 +49,14 @@
 
 .product__image-block {
     position: relative;
+    width: 100%;
+    max-width: 410px;
+    min-height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
 }
 
 .product__loupe {
@@ -65,10 +73,65 @@
     margin: 0;
     padding: 0;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .product__info {
     margin-left: auto;
     max-width: 540px;
 
+}
+
+.product__image-item {
+    border: 2px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.product__image-item--active {
+    border-color: $blue;
+}
+
+@media (max-width: 960px) {
+
+    .product__name {
+        font-size: 35px;
+        line-height: 120%;
+    }
+    .product__wrapper {
+        //flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 50px 25px 30px 25px;
+    }
+
+    .product__info {
+        order: -1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product__caption {
+        font-size: 25px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 590px) {
+    .product__image-list {
+        display: flex;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .product__image-item {
+        margin-right: 5px;
+    }
+
+    .product__image {
+        width: 100%;
+        height: auto
+    }
 }

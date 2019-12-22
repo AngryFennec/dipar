@@ -10,7 +10,7 @@ if (pricesSelector) {
     //     if(document.body.clientWidth <= 1240) {
             pricesSwiper = new Swiper('.prices__swiper', {
                  slidesPerView: 'auto',
-                 spaceBetween: 9,
+                //  spaceBetween: 9,
                 // centeredSlides: true,
                   navigation: {
                     nextEl: '.prices__next-button',

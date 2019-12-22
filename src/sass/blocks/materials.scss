@@ -13,7 +13,7 @@
 }
 
 .materials__item {
-    margin: 4px;
+    margin: 2px 4px;
 }
 
 .materials__title {
@@ -34,4 +34,9 @@
     .materials__wrapper {
         padding: 0 25px;
     }
+    .materials__title {
+        font-size: 25px;
+        line-height: 120%;
+    }
+    
 }

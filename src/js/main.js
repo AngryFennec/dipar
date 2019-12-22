@@ -9,4 +9,6 @@
 //= modules/news.js
 //= modules/landing.js
 //= modules/filter.js
+//= modules/card.js
+//= modules/popup.js
 

@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="header__scroll-block">
-          <a class="header__scroll-link anchor" href="#about-service" style="display: block; border: 1px solid red; display: block">
+          <a class="header__scroll-link anchor" href="#about-service">
             <span class="header__scroll-text">Там внизу что-то есть</span>
 
             <img class="header__scroll-image" src="img/mouse-icon.svg" alt="Изображение мышки">
@@ -98,9 +98,15 @@
           </li>
         </ul>
       </div>
-      <form class="feadback__form" action="#" method="post">
-        <input class="feadback__field" type="text" placeholder="Ваше имя">
-        <input class="feadback__field" type="text" placeholder="Номер телефона">
+      <form id="feadback" class="feadback__form" action="#" method="post">
+        <div class="feadback__field-wrapper">
+          <span class="feadback__name-error">Заполните имя, пожалуйста</span>
+          <input class="feadback__field" name="name" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="feadback__field-wrapper">
+          <span class="feadback__phone-error">Заполните телефон, пожалуйста</span>
+          <input class="feadback__field" name="phone" type="text" placeholder="Номер телефона">
+        </div>
         <button class="btn btn--feadback">Отправить</button>
       </form>
     </section>
@@ -272,9 +278,11 @@
             </li>
           </ul>
         </div>
-        <form class="feadback__form" action="#" method="post">
-          <input class="feadback__field" type="text" placeholder="Ваше имя">
-          <input class="feadback__field" type="text" placeholder="Номер телефона">
+        <form class="feadback__form" id="popup-form" action="#">
+          <span class="feadback__name-error">Заполните имя, пожалуйста</span>
+          <input class="feadback__field" type="text" name="user-name" placeholder="Ваше имя">
+          <span class="feadback__phone-error">Заполните телефон, пожалуйста</span>
+          <input class="feadback__field" type="text" name="user-phone" placeholder="Номер телефона">
           <button class="btn btn--feadback">Отправить</button>
         </form>
         <p class="feadback__agree">Нажимая кнопку заказать, вы даете согласие на обработку <a href="#">персональных данных</a></p>

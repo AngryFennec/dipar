@@ -13,10 +13,27 @@
         document.querySelector('.popup').style.display = 'block';
     });
     document.addEventListener('keydown', function(e) {
-
         if (e.keyCode === 27) {
-          e.preventDefault();
             document.querySelector('.popup').style.display = 'none';
+        }
+    });
+
+    var form = document.querySelector('#popup-form');
+
+    form.addEventListener('submit', function(e){
+        var name = form.querySelector('input[name="user-name"]');
+        var phone = form.querySelector('input[name="user-phone"]');
+        if (name.value) {
+            form.querySelector('.feadback__name-error').style.display = "none";
+        } else {
+            e.preventDefault();
+            form.querySelector('.feadback__name-error').style.display = "block";
+        }
+        if (phone.value) {
+            form.querySelector('.feadback__phone-error').style.display = "none";
+        } else {
+            e.preventDefault();
+            form.querySelector('.feadback__phone-error').style.display = "block";
         }
     });
 

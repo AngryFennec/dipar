@@ -245,15 +245,24 @@ input:checked + .filter__label {
 .hidden {
     display: flex;
 }
-@media (max-width: 768px) {
-    
 
+.filter__dropdown {
+    display: none;
+}
+
+.filter__form.hidden {
+    display: block;
+}
+
+@media (max-width: 768px) {
     .filter__form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
+    .filter__form.hidden {
+        display: flex;
+    }
     .filter {
         max-width: 100%;
     }
@@ -280,6 +289,36 @@ input:checked + .filter__label {
 @media (max-width: 500px) {
     .filter__block {
         width: 100%;
+    }
+
+    .filter__dropdown {
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        background: white;
+        border: 1px solid $blue;
+        border-radius: 2px;
+        color: $blue;
+        font-weight: 600;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 20px;
+            top: 18px;
+            background: url("../img/filter-arrow.svg") no-repeat 0 0;
+            width: 12px;
+            height: 8px;
+        }
+    }
+
+    .filter {
+        margin-bottom: 15px;
+    }
+
+    .filter__form.hidden {
+        display: none;
     }
 }
 

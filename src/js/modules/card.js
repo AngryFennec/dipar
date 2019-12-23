@@ -30,7 +30,6 @@ if (loupe) {
         document.querySelector('.lightbox').style.display = 'none';
     })
     document.addEventListener('keydown', function(e) {
-        e.preventDefault();
         if (e.keyCode === 27) {
             document.querySelector('.lightbox').style.display = 'none';
         }
@@ -68,11 +67,32 @@ if (document.querySelector('.parameters__table')) {
                 } else {
                     item.classList.add('hidden');
                 }
-
             });
 
         }
     })
 }
 
+//feadback
+if (document.querySelector('#feadback')) {
+    var form = document.querySelector('#feadback');
+
+    form.addEventListener('submit', function(e){
+        var name = form.querySelector('input[name="name"]');
+        var phone = form.querySelector('input[name="phone"]');
+        if (name.value) {
+            form.querySelector('.feadback__name-error').style.display = "none";
+        } else {
+            e.preventDefault();
+            form.querySelector('.feadback__name-error').style.display = "block";
+        }
+        if (phone.value) {
+            form.querySelector('.feadback__phone-error').style.display = "none";
+        } else {
+            e.preventDefault();
+            form.querySelector('.feadback__phone-error').style.display = "block";
+        }
+    });
+}
+    
 })();

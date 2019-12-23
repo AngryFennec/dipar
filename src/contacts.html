@@ -341,9 +341,11 @@
             </li>
           </ul>
         </div>
-        <form class="feadback__form" action="#">
-          <input class="feadback__field" type="text" placeholder="Ваше имя">
-          <input class="feadback__field" type="text" placeholder="Номер телефона">
+        <form class="feadback__form" id="popup-form" action="#">
+          <span class="feadback__name-error">Заполните имя, пожалуйста</span>
+          <input class="feadback__field" type="text" name="user-name" placeholder="Ваше имя">
+          <span class="feadback__phone-error">Заполните телефон, пожалуйста</span>
+          <input class="feadback__field" type="text" name="user-phone" placeholder="Номер телефона">
           <button class="btn btn--feadback">Отправить</button>
         </form>
         <p class="feadback__agree">Нажимая кнопку заказать, вы даете согласие на обработку <a href="#">персональных данных</a></p>

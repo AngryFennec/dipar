@@ -274,6 +274,7 @@ color: #FFFFFF;
 @media (max-width: 960px) {
   .header__block {
     flex-direction: column;
+    padding-bottom: 30px;
   }
 
   .header__description {
@@ -436,6 +437,12 @@ color: #FFFFFF;
 }
 
 @media (max-width: 590px) {
+  .header--service {
+    min-height: auto;
+  }
+  .header--service .header__wrapper {
+    min-height: auto;
+  }
   .header__scroll-block  {
     display: none;
   }

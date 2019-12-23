@@ -120,7 +120,39 @@ margin-bottom: 50px;
       display: block;
     }
   }
+}
 
+.tool {
+  &:hover {
+    background: linear-gradient(0deg, #007DD6, #007DD6), linear-gradient(0deg, #29A5F8, #29A5F8), radial-gradient(40.65% 86.72% at 27.68% 13.28%, #233745 0%, #0F181E 100%);
+    color: $white;
+
+    .tool__title {
+      color: $white;
+      margin-top: 17px;
+    }
+    .tool__text {
+      color: #B6DAF4;
+      margin-bottom: 32px;
+    }
+
+    .tool__btn {
+      display: none;
+    }
+
+    .tool__links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tool__picture {
+      display: none;
+    }
+
+    .tool__picture-active {
+      display: block;
+    }
+  }
 }
 
 

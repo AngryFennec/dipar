@@ -39,9 +39,7 @@
     padding: 0;
     margin: 0;
     margin-left: 25px;
-}
-
-.feadback__contact {
+& li  {
     padding-top: 12px;
     display: flex;
     flex-direction: column;
@@ -58,6 +56,7 @@
         color: white;
     }
 }
+}
 
 .feadback__field {
     padding: 0 25px;
@@ -73,7 +72,7 @@
     &::-webkit-input-placeholder  {
         color:white;
     }
-    
+
     &::-moz-placeholder {
         color:white;
     }

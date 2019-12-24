@@ -6,3 +6,5 @@
 //= vendor/picturefill.js
 //= vendor/swiper.js
 //= vendor/nouislider.js
+//= vendor/jquery.min.js
+//= vendor/jquery.fancybox.js

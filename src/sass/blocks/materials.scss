@@ -4,7 +4,7 @@
     padding: 0 50px;
 }
 
-.materials__list {
+.materials ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
 }
 
-.materials__item {
+.materials li {
     margin: 2px 4px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 390px) {
-    .materials__list {
+    .materials ul {
         justify-content: center;
     }
 }
@@ -34,6 +34,7 @@
     .materials__wrapper {
         padding: 0 25px;
     }
+    
     .materials__title {
         font-size: 25px;
         line-height: 120%;

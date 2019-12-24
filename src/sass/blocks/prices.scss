@@ -24,7 +24,7 @@
     padding-left: 10px;
 }
 
-.prices__list {
+.prices ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -40,7 +40,7 @@
     max-width: 213px;
 }
 
-.prices__card-name {
+.prices__card p {
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
@@ -48,7 +48,7 @@
     margin-bottom: 10px;
 }
 
-.prices__item {
+.prices li {
   width:220px;
 }
 
@@ -90,7 +90,7 @@
     right: 65px;
 }
 
-.prices__card-link {
+.prices__card a {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;

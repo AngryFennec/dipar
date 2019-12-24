@@ -28,34 +28,37 @@ font-weight: 800;
   flex-wrap: wrap;
   margin-left: 15px;
   //width: 50%;
+  & li {
+    position: relative;
+    width: 45%;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #38AAF6;
+      top: 10px;
+      left: -20px;
+    }
 
-}
-.about__list-what {
-  margin: 0;
-}
-.about__list-item {
-  position: relative;
-  width: 45%;
-  margin-bottom: 20px;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #38AAF6;
-    top: 10px;
-    left: -20px;
+    &:nth-child(2n-1) {
+      margin-right: 9%;
+    }
+  }
+  & p {
+    margin: 0;
+  }
+  & b {
+    font-weight: 700;
   }
 
-  &:nth-child(2n-1) {
-    margin-right: 9%;
-  }
 }
 
-.about__list-bold {
-  font-weight: 700;
-}
+
+
+
 
 .about__wrapper {
   display: flex;

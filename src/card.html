@@ -60,20 +60,27 @@
         <h1 class="product__name product__name--mobile" style="display: none">Stamo ST900-NPTF</h1>
         <div class="product__image-block">
           <button class="product__loupe" type="button"><img src="img/loupe-icon.svg" alt="изображение лупы"></button>
+          <a href="img/product.jpg" data-fancybox = "product">
           <picture>
             <img class="product__image" src="img/product.jpg" alt="изображение товара" srcset="img/product@2x.jpg 2x">
+
           </picture>
+        </a>
         </div>
         <ul class="product__image-list">
           <li class="product__image-item product__image-item--active">
+
             <picture>
               <img width="90" height="90" class="product__item-image" src="img/product-2.jpg" alt="изображение товара" data-image="img/product.jpg" srcset="img/product-2@2x.jpg 2x">
             </picture>
+
           </li>
           <li class="product__image-item">
+          
             <picture>
               <img width="90" height="90" class="product__item-image" src="img/product-1.jpg" alt="изображение товара" data-image="img/product-1.jpg" srcset="img/product-1@2x.jpg 2x">
             </picture>
+
           </li>
         </ul>
         <div class="product__info">
@@ -705,6 +712,19 @@
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
+  <script>
+  (function ($) {
+$(`[data-fancybox]`).fancybox({
+smallBtn: `true`,
+baseClass: `video-lightbox`,
+iframe: {
+css: {
+maxWidth: `800px`,
+maxHeight: `600px`
+}
+}
+});
+})(jQuery);</script>
 </body>
 
 </html>

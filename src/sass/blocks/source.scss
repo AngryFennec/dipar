@@ -33,10 +33,25 @@
   list-style: none;
   width: 100%;
 
-}
-
-.source__sublist-item {
+& li {
   margin-bottom: 12px;
+}
+& a {
+  font-style: $font;
+  font-size: 16px;
+line-height: 22px;
+color: #707070;
+text-decoration: none;
+transition: 0.2s;
+font-weight: 400;
+width: 290px;
+
+  &:hover {
+  transition: 0.2s;
+  color: #38AAF6;
+  //font-weight: 700;
+  }
+}
 }
 
 .source__sublist-title {
@@ -53,23 +68,6 @@ max-width: 200px;
   }
 }
 
-
-.source__link {
-  font-style: $font;
-  font-size: 16px;
-line-height: 22px;
-color: #707070;
-text-decoration: none;
-transition: 0.2s;
-font-weight: 400;
-width: 290px;
-
-  &:hover {
-  transition: 0.2s;
-  color: #38AAF6;
-  //font-weight: 700;
-  }
-}
 
 @include tablet {
   .source__list {

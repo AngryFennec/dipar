@@ -8,20 +8,20 @@
   max-width: 624px;
   width: 100%;
   margin-top: 30px;
+  & a {
+      font-family: $font;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.5;
+    text-decoration: none;
+
+    &:hover {
+      color: #474747;
+        opacity: 1;
+    }
 }
 
-.footer__link {
-  font-family: $font;
-font-size: 16px;
-line-height: 22px;
-color: #000000;
-opacity: 0.5;
-text-decoration: none;
-
-&:hover {
-  color: #474747;
-    opacity: 1;
-}
 }
 
 .footer__wrapper {
@@ -150,10 +150,10 @@ transition: 0.2s;
   flex-direction: column;
   max-width: 20%;
   flex-shrink: 1;
-}
-.footer__list-item {
+& li {
     margin: 0 auto;
   }
+}
 
 .footer__logo-container {
   margin-right: 20px;
@@ -176,11 +176,10 @@ transition: 0.2s;
       max-width: 90%;
       margin: 0 auto;
       margin-bottom: 20px;
-    }
-
-    .footer__list-item {
-      margin: 0;
-    }
+      & li {
+          margin: 0;
+        }
+      }
 
     .footer__logo-container {
       order: 2;

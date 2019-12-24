@@ -23,12 +23,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  height: 850px;
-
-
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 
 
@@ -40,8 +36,9 @@
   padding-top: 35px;
   padding-bottom: 25px;
   border-bottom: 1px solid #D6D6D6;
-  &:first-child {
-    margin-right: 25px;
+
+  &:nth-child(2n-1) {
+    margin-right: 5%;
   }
 }
 

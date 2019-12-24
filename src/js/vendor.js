@@ -8,3 +8,4 @@
 //= vendor/nouislider.js
 //= vendor/jquery.min.js
 //= vendor/jquery.fancybox.js
+//= vendor/inputmask.js

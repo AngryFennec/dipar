@@ -1,6 +1,7 @@
 'use strict';
 
 (function() {
+
     document.querySelector('.nav__with-us').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('.popup').style.display = 'block';
@@ -19,6 +20,11 @@
     });
 
     var form = document.querySelector('#popup-form');
+    var selector = form.querySelector('input[name="user-phone"]');
+
+    var im = new Inputmask("+7 (999) 999-99-99");
+    im.mask(selector);
+
 
     form.addEventListener('submit', function(e){
         var name = form.querySelector('input[name="user-name"]');
@@ -36,5 +42,6 @@
             form.querySelector('.feadback__phone-error').style.display = "block";
         }
     });
+
 
 })();

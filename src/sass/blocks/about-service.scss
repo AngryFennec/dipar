@@ -48,14 +48,14 @@
     flex-shrink: 0;
 }
 
-.about-service__stages {
+.about-service ul {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-top: 15px;
 }
 
-.about-service__stage {
+.about-service li {
     padding-left: 47px;
     position: relative;
     font-size: 18px;

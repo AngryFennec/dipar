@@ -23,7 +23,7 @@
     max-width: 485px;
 }
 
-.makers__list {
+.makers ul {
 
     max-width: 665px;
     list-style: none;
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 1170px) {
-    .makers__list {
+    .makers ul {
         justify-content: space-around;
     }
 }
@@ -113,11 +113,11 @@
 
     .makers__title,
     .makers__description,
-    .makers__list {
+    .makers ul {
         max-width: 100%;
     }
 
-    .makers__list {
+    .makers ul {
         padding: 0 35px;
     }
 
@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 768px) {
-    .makers__list {
+    .makers ul {
         padding: 0;
     }
 }

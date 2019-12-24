@@ -73,5 +73,18 @@ if (document.querySelector('#feadback')) {
         }
     });
 }
-    
+
+(function ($) {
+    $(`[data-fancybox]`).fancybox({
+        smallBtn: `true`,
+        baseClass: `video-lightbox`,
+        iframe: {
+        css: {
+            maxWidth: `800px`,
+            maxHeight: `600px`
+            }
+        }
+    });
+})(jQuery)
+
 })();

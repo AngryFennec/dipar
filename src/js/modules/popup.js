@@ -43,5 +43,13 @@
         }
     });
 
+    var formFb = document.querySelector('#feadback');
+    if (formFb) {
+    var selectorFb = formFb.querySelector('input[name="phone"]');
+
+    var imFb = new Inputmask("+7 (999) 999-99-99");
+    imFb.mask(selectorFb);
+}
+
 
 })();

@@ -39,9 +39,9 @@
     padding: 0;
     margin: 0;
     margin-left: 25px;
-}
 
-.feadback li {
+& li  {
+
     padding-top: 12px;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@
         color: white;
     }
 }
+}
 
 .feadback input {
     padding: 0 25px;
@@ -73,7 +74,7 @@
     &::-webkit-input-placeholder  {
         color:white;
     }
-    
+
     &::-moz-placeholder {
         color:white;
     }

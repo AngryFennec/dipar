@@ -24,6 +24,11 @@
   padding-bottom: 16px;
   background: transparent;
   transition: 0.2s;
+  font-size: 14px;
+line-height: 19px;
+color: #FFFFFF;
+
+
   cursor: pointer;
   &--active {
     background: #38AAF6;
@@ -158,9 +163,9 @@ margin: 0;
   width:718px;
   height: 552px;
 
-  & img {
+  & iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
 box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
 
   }
@@ -170,15 +175,16 @@ box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
   .contacts__map-wrapper {
     position: absolute;
     top: 30px;;
-    right: 3%;
+    right: 2%;
     z-index: 10;
-    max-width: 500px;
+    width: 550px;
+    height: 420px;
 
-    height: auto;
 
-    & img {
+
+    & iframe {
       width: 100%;
-      height: auto;
+    height: 100%;
   box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
 
     }
@@ -188,11 +194,12 @@ box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
 
 @include tablet {
   .contacts {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 .contacts__map-wrapper {
   position: relative;
   width: 90%;
+  min-height: 400px;
   padding-left: 27px;
   padding-right: 27px;
 }
@@ -205,4 +212,13 @@ box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
   width: 130px;
   font-size: 12px;
 }
+}
+
+@include mobile {
+  .contacts__map-wrapper {
+    width: 100%;
+    min-height: 300px;
+    padding: 0;
+    right: 0;
+  }
 }

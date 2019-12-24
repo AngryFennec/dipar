@@ -236,10 +236,12 @@ color: #FFFFFF;
   font-size: 16px;
   line-height: 22px;
   color: #78838A;
+  transition: 0.2s;
 
   &:hover {
     color: white;
-    font-weight: 700;
+    transition: 0.2s;
+    //font-weight: 700;
   }
 }
 

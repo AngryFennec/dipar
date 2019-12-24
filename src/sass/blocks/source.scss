@@ -1,5 +1,3 @@
-.source {}
-
 .source__wrapper {
   max-width: 1254px;
   margin: 0 auto;
@@ -41,18 +39,15 @@
   margin-bottom: 12px;
 }
 
-.source__sublist-title h3 {
+.source__sublist-title {
+  margin-bottom: 15px;
   font-style: $font;
   font-size: 24px;
 line-height: 26px;
 font-weight: 900;
 color: #474747;
-margin-bottom: 0;
+margin-bottom: 15px;
 max-width: 200px;
-}
-
-.source__sublist-title {
-  margin-bottom: 15px;
   &--one {
     padding-top: 26px;
   }
@@ -72,7 +67,7 @@ width: 290px;
   &:hover {
   transition: 0.2s;
   color: #38AAF6;
-  font-weight: 700;
+  //font-weight: 700;
   }
 }
 
@@ -93,7 +88,9 @@ width: 290px;
 }
 
 @include mobile {
-
+.source {
+  display: none;
+}
   .source__list {
     //margin: 0 auto;
     margin: 0;

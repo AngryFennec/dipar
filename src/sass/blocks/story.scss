@@ -16,14 +16,21 @@ color: #5F5F5F;
 margin-bottom: 0;
 }
 
-.story__title {
-  font-family: $font;
-font-style: normal;
-font-weight: 800;
-font-size: 40px;
-line-height: 54px;
-color: #272727;
-margin-top: 14px;
+.story {
+  h2 {
+    font-family: $font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+  color: #272727;
+  margin-top: 14px;
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 120%;
+  }
+  }
 }
 
 .story__text {
@@ -115,11 +122,9 @@ margin-top: 10px;
   margin-right: 5%;
 }
 
-.story__img {
-  & img {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
+.story__img-container {
+    width: 100%;
+
 }
 
 .story__questions {
@@ -140,8 +145,18 @@ color: #272727;
 
 }
 
-.story__img-container {
-  width: 100%;
+
+.story__text-container {
+  font-family: $font;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #272727;
+& img {
+margin-top: 10px;
+margin-bottom: 5px;
+}
 }
 
 @media (max-width: 1200px) {
@@ -154,7 +169,7 @@ color: #272727;
     flex-direction: column;
     padding-bottom: 40px;
 }
-.story__img {
+.story__text-container {
   & img {
     width: 100%;
     max-width: 100%;

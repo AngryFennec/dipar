@@ -30,14 +30,14 @@
     margin-bottom: 17px;
 }
 
-.classification__list {
+.classification ul {
     list-style: none;
     max-width: 650px;
     padding: 0;
     margin: 0 0 31px 0;
 }
 
-.classification__item {
+.classification li {
     font-size: 18px;
     line-height: 24px;position: relative;
     padding-left: 20px;
@@ -93,7 +93,7 @@
     
     .classification__title,
     .classification__description,
-    .classification__list,
+    .classification ul,
     .classification__addition {
         max-width: 100%;
     }
